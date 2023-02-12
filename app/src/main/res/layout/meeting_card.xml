@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/light_gray"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/constraint_container"
+            android:padding="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heaven Meeting"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="30dp"
+                android:maxWidth="30dp"
+
+                android:src="@drawable/call_add"
+                app:layout_constraintTop_toTopOf="@id/text_view_header"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:id="@+id/text_view_time"
+                android:gravity="center"
+                android:background="@drawable/action_bg_shape"
+                app:layout_constraintTop_toBottomOf="@id/text_view_header"
+                app:layout_constraintStart_toStartOf="@id/text_view_header"
+                android:text="8:00 - 9:00"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text_view_time"
+                android:layout_marginTop="20dp"
+                android:text="@string/meeting_description"
+                />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="All Members"
+              app:layout_constraintTop_toBottomOf="@id/text_view_description"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginTop="20dp"
+              android:id="@+id/text_view_members"
+              />
+
+            <TextView
+                android:layout_width="30dp"
+                android:id="@+id/text_view_first"
+                android:layout_height="30dp"
+                android:background="@drawable/member"
+                android:visibility="gone"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_view_members"
+                android:text="U"
+                />
+            <TextView
+                android:layout_width="30dp"
+                android:id="@+id/text_view_second"
+                android:layout_height="30dp"
+                android:background="@drawable/member"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_view_members"
+                android:text="U"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/text_view_third"
+                android:visibility="gone"
+                android:background="@drawable/member"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_view_members"
+                android:text="U"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
